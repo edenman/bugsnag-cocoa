@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0296B46CF7321F684ECACB1 /* libPods-bugsnag-example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8C72BF7F8211697881F641 /* libPods-bugsnag-example.a */; };
+		3A1412AC3098CC43E99106D5 /* Pods_bugsnag_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F10A2BFF1399A4B9AB14B41 /* Pods_bugsnag_example.framework */; };
 		D175F4BE1ACDBD81009AFFB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175F4BD1ACDBD81009AFFB7 /* AppDelegate.swift */; };
 		D175F4C01ACDBD81009AFFB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D175F4BF1ACDBD81009AFFB7 /* ViewController.swift */; };
 		D175F4C31ACDBD81009AFFB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D175F4C11ACDBD81009AFFB7 /* Main.storyboard */; };
@@ -33,7 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A8C72BF7F8211697881F641 /* libPods-bugsnag-example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-bugsnag-example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F10A2BFF1399A4B9AB14B41 /* Pods_bugsnag_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bugsnag_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C72198B7DFCD1FD2F92628E3 /* Pods-bugsnag-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bugsnag-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-bugsnag-example/Pods-bugsnag-example.release.xcconfig"; sourceTree = "<group>"; };
 		C9204A923B81A3D14457E739 /* Pods-bugsnag-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bugsnag-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bugsnag-example/Pods-bugsnag-example.debug.xcconfig"; sourceTree = "<group>"; };
 		D175F4B81ACDBD81009AFFB7 /* bugsnag-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bugsnag-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +61,7 @@
 			files = (
 				E75E62E11F4CE1DD000C44C0 /* libz.tbd in Frameworks */,
 				E75E62DF1F4CE1D8000C44C0 /* libc++.tbd in Frameworks */,
-				B0296B46CF7321F684ECACB1 /* libPods-bugsnag-example.a in Frameworks */,
+				3A1412AC3098CC43E99106D5 /* Pods_bugsnag_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +153,7 @@
 			children = (
 				E75E62E01F4CE1DD000C44C0 /* libz.tbd */,
 				E75E62DE1F4CE1D8000C44C0 /* libc++.tbd */,
-				1A8C72BF7F8211697881F641 /* libPods-bugsnag-example.a */,
+				8F10A2BFF1399A4B9AB14B41 /* Pods_bugsnag_example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,6 +170,7 @@
 				D175F4B51ACDBD81009AFFB7 /* Frameworks */,
 				D175F4B61ACDBD81009AFFB7 /* Resources */,
 				9AFEEED933DC82BFDDB374F6 /* Upload Bugsnag dSYM */,
+				69D6BBA8996D7B673B118608 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -210,7 +211,7 @@
 				TargetAttributes = {
 					D175F4B71ACDBD81009AFFB7 = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 372ZUL2ZB7;
+						DevelopmentTeam = J9JG5AU5GT;
 						LastSwiftMigration = 0900;
 					};
 					D175F4CC1ACDBD81009AFFB7 = {
@@ -276,6 +277,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69D6BBA8996D7B673B118608 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-bugsnag-example/Pods-bugsnag-example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bugsnag/Bugsnag.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bugsnag.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bugsnag-example/Pods-bugsnag-example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9AFEEED933DC82BFDDB374F6 /* Upload Bugsnag dSYM */ = {
@@ -456,7 +479,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 372ZUL2ZB7;
+				DEVELOPMENT_TEAM = J9JG5AU5GT;
 				INFOPLIST_FILE = "bugsnag-example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bugsnag.bugsnag-example";
@@ -475,7 +498,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 372ZUL2ZB7;
+				DEVELOPMENT_TEAM = J9JG5AU5GT;
 				INFOPLIST_FILE = "bugsnag-example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bugsnag.bugsnag-example";

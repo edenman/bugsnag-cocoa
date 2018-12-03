@@ -19,14 +19,15 @@
 // THE SOFTWARE.
 
 import UIKit
+import Bugsnag
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-        Bugsnag.start(withApiKey: "your-api-key")
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+      Bugsnag.start(withApiKey: "your-api-key")
         return true
     }
     
